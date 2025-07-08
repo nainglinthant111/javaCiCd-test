@@ -1,0 +1,26 @@
+# Maven/Gradle build folders
+target/
+build/
+
+# IDE files
+*.iml
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Git
+.git
+.gitignore
+
+# Tests
+**/test/**
+
+# Docker
+Dockerfile
+.dockerignore
