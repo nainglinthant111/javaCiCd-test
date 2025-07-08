@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+    gicdemo:
+        build: .
+        ports:
+            - "8000:8080"
+        container_name: gicdemo
