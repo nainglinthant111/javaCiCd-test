@@ -10,7 +10,7 @@ on:
 
 jobs:
     deploy:
-        runs-on: mazon Linux 2023
+        runs-on: ubuntu-latest
 
         steps:
             - name: Checkout code
