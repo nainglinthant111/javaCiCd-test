@@ -36,15 +36,15 @@ jobs:
                   username: ${{ secrets.EC2_USER }}
                   key: ${{ secrets.EC2_SSH_KEY }}
                   script: |
-                      cd /home/ubuntu/my-java-app
+                      cd /home/ubuntu/mydemo 
                       git pull origin main || true
 
                       # Stop and remove old container/image
-                      docker stop my-java-app || true
-                      docker rm my-java-app || true
+                      docker stop mydemo  || true
+                      docker rm mydemo  || true
 
                       # Build new image from pulled code
-                      docker build -t my-java-app .
+                      docker build -t mydemo  .
 
                       # Run new container
-                      docker run -d --name my-java-app -p 8080:8080 my-java-app
+                      docker run -d --name mydemo -p 8080:8080 mydemo
